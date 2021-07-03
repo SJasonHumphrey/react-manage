@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { useProjectsValue, useSelectedProjectValue } from '../context';
 import { firebase } from '../firebase';
 
+
 export const IndividualProject = ({ project }) => {
   const [showConfirm, setShowConfirm] = useState(false);
   const { projects, setProjects } = useProjectsValue();
@@ -40,11 +41,10 @@ export const IndividualProject = ({ project }) => {
         {showConfirm && (
           <div className="project-delete-modal">
             <div className="project-delete-modal__inner">
-              <p>Are you sure you want to delete this project?</p>
+              <p>Delete this project?</p>
               <button
                 type="button"
-                onClick={() => deleteProject(project.docId)}
-              >
+                onClick={() => deleteProject(project.docId)}>
                 Delete
               </button>
               <span
@@ -54,8 +54,7 @@ export const IndividualProject = ({ project }) => {
                 }}
                 tabIndex={0}
                 role="button"
-                aria-label="Cancel adding project, do not delete"
-              >
+                aria-label="Cancel adding project, do not delete">
                 Cancel
               </span>
             </div>

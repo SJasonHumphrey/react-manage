@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaGitAlt} from 'react-icons/fa';
+import {FaPlusCircle ,FaPowerOff} from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import { AddTask } from '../AddTask';
 
@@ -23,9 +23,8 @@ export const Header = ({ darkMode, setDarkMode }) => {
                 onClick={() => {
                   setShowQuickAddTask(true);
                   setShouldShowMain(true);
-                }}
-              >
-                +
+                }}> 
+              <FaPlusCircle style={{width: '20px'}} className="mt-1"/>
               </button>
             </li>
             <li className="settings__darkmode">
@@ -35,7 +34,7 @@ export const Header = ({ darkMode, setDarkMode }) => {
                 type="button"
                 onClick={() => setDarkMode(!darkMode)}
               >
-                <FaGitAlt />
+            <FaPowerOff className="mt-1"/>
               </button>
             </li>
           </ul>
