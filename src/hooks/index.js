@@ -50,7 +50,7 @@ export const useTasks = selectedProject => {
 
   return { tasks, archivedTasks };
 };
-
+export default useTasks;
 export const useProjects = () => {
   const [projects, setProjects] = useState([]);
 
@@ -72,6 +72,7 @@ export const useProjects = () => {
         }
       });
   }, [projects]);
-
   return { projects, setProjects };
+
+  
 };

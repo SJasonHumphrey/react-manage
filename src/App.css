@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    color: #202020;
+    background-color: #fafafa;
+    font-smooth: always;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.box-overlay {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 85px;
+    border-radius: 3px;
+}
+
+.btn {
+    background-color: #00dd3b;
+    color: #fff !important;
+    border: 1px solid transparent;
+    margin-right: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 13px !important;
+    line-height: 17px;
+    padding: 6px 12px 7px 12px;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 3px !important;
+    text-decoration: none !important;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cancel {
+    color: #555;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 2px 5px;
+}
+
+header {
+    border-bottom: solid 1px #000000;
+    background-color:#00dd3b;
+    transition: height 200ms ease-in;
+    height: 44px;
+    z-index: 400;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sidebar {
+    width: 226px;
+    height: calc(100vh);
+    padding-top: 74px;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #fafafa;
+}
+
+
+li:hover .sidebar__project-delete {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    
+}
+
+.content {
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-template-columns: 1fr auto;
+    max-width: 922px;
+    margin: auto;
+}
+
+.tasks {
+    width: 656px;
+    background-color: white;
+    margin-left: 266px;
+    min-height: calc(100vh);
+    vertical-align: top;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
+    padding-bottom: 84px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 30px 20px 0;
+}
+
+.add-task {
+    margin-top: 20px;
+}
+
+.__list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 18px;
+    color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    list-style-type: none;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.checkbox-holder {
+    margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 16px;
+}
+
+.checkbox {
+        cursor: pointer;
+        border-color: gray;
+        color: #343434;
+        height: 16px;
+        width: 16px;
+        display: block;
+        border: 1px solid gray;
+        border-radius: 16px;
+}
+
+.header {
+    font-size: 13px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.project-overlay {
+    background-color: white;
+    width: 200px;
+    right: 0;
+}
+
